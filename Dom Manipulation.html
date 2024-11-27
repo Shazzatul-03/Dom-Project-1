@@ -1,0 +1,41 @@
+<!-- this page has submited in facebook -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Dom Manipulation2</title>
+          <style>
+                    .heading {
+                              color: #fff;
+                              background-color: teal;
+                              padding: 25px;
+                              margin: 2rem , 0;
+                              border-radius: 8px;
+                              text-align: center;
+                              font-size: 50px;
+
+                    }
+          </style>
+</head>
+<body>
+          <h2>Hello World</h2>
+          <button>Modify Me</button>
+          <script>
+                    let title = document.querySelector('h2');
+                    let btn = document.querySelector('button');
+                    btn.addEventListener('click',(event) => {
+                              
+                              title.classList.toggle('heading')
+                              
+                              // title.style.color = '#fff';
+                              // title.style.backgroundColor = 'teal';
+                              // title.style.padding = '25px';
+                              // title.style.margin = '2rem';
+                              // title.style.borderRadius = '8px';
+                              // title.style.textAlign = 'center'
+                    })
+          </script>
+</body>
+</html>
